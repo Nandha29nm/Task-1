@@ -47,6 +47,20 @@ public class practice {
 	else {
 		System.out.println("c is smallest");
 	}
+		//discount q5
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the purchase amount:");
+	double purchase=sc.nextDouble();
+	double discount=0.0;
+	double finalAmount;
+	if(purchase>=500 && purchase<=1000) {
+		discount=0.10;
+	}
+	else if(purchase>1000) {
+		discount=0.20;
+	}
+	finalAmount =purchase-(purchase*discount);
+	System.out.println(finalAmount);
 	
 
 }
